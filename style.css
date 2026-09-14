@@ -417,7 +417,7 @@ button {
 
 .robot-image {
     width: 100%;
-    height: auto;
+    height: 498px;
 
     object-fit: contain;
 
@@ -477,9 +477,10 @@ button {
     max-width: 850px;
 
     font-family: var(--font-display);
+    padding-left: 113px;
 
     font-size: clamp(
-        60px,
+        70px,
         8.1vw,
         116px
     );
@@ -903,6 +904,8 @@ button {
             16vw,
             82px
         );
+        font-family: urbanist;
+        font-weight: 500px;
 
         line-height: 0.89;
 
@@ -921,6 +924,9 @@ button {
 
     .hero-intro {
         max-width: 330px;
+        font-family: inter;
+        font-weight: 300px;
+
     }
 
     .hero-button {
@@ -1074,19 +1080,19 @@ button {
 
 
 .section-two-title {
-    font-family: var(--font-display);
+    font-family: Urbanist(--font-display);
 
     font-size: clamp(
-        55px,
+        40px,
         5.2vw,
-        72px
+        44px
     );
 
     line-height: 0.94;
 
-    letter-spacing: -0.065em;
+    letter-spacing: 0.025em;
 
-    font-weight: 700;
+    font-weight: 500;
 
     max-width: 520px;
 
@@ -1191,7 +1197,6 @@ button {
             rgba(0, 0, 0, 0.55) 100%
         );
 }
-
 
 
 .feature-card-content {
@@ -1903,29 +1908,14 @@ button {
 
 
 
-.sales-report-card {
-    position: relative;
-
-    width: 100%;
-
-    overflow: hidden;
-
-    border-radius: 7px;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 20px 45px rgba(20, 20, 40, 0.07);
-}
-
-
 .sales-report-image {
     display: block;
 
-    width: 419px;
-    height: 346px;
+    width: 100%;
+    height: 396px;
+    padding-bottom: 0%;
 
-    object-fit: contain;
+    
 
     transition:
         transform 0.6s
@@ -2050,17 +2040,17 @@ button {
 
     margin-bottom: 25px;
 
-    font-family: var(--font-display);
+    font-family: Urbanist(--font-display);
 
     font-size: clamp(
-        48px,
+        38px,
         5vw,
-        67px
+        37px
     );
 
     line-height: 0.94;
 
-    letter-spacing: -0.065em;
+    letter-spacing: -0.001em;
 
     font-weight: 700;
 }
@@ -2294,8 +2284,6 @@ button {
     }
 
 
-    /* Visual */
-
     .section-three-visual {
         width: 100%;
     }
@@ -2488,19 +2476,19 @@ button {
 .section-four-title {
     margin-bottom: 24px;
 
-    font-family: var(--font-display);
+    font-family: Urbanist(--font-display);
 
     font-size: clamp(
         48px,
         5vw,
-        67px
+        47px
     );
 
     line-height: 0.94;
 
-    letter-spacing: -0.065em;
+    letter-spacing: -0.06\05em;
 
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .section-four-description {
@@ -3367,17 +3355,19 @@ button {
 }
 
 .pricing-title {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 58px;
+  font-family: urbanist;
+  font-weight: 600;
   line-height: 1.2;
   color: #000000;
   margin: 0;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
 }
 
 .pricing-subtitle {
+  font-family: inter;
   font-size: 16px;
-  color: #757575;
+  color: #757B8A;
   margin: 0;
 }
 
@@ -3445,11 +3435,12 @@ button {
   background-color: #B9FF66;
   color: #000000;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 8px 18px;
   border-radius: 20px;
+  outline: 8px solid white;
   letter-spacing: 0.5px;
-  white-space: nowrap;
+  
 }
 
 .card-top-meta {
@@ -3669,15 +3660,17 @@ button {
 }
 
 .testimonial-title {
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 500;
   line-height: 1.15;
   margin: 0;
-  letter-spacing: -1px;
+  letter-spacing: 0.2px;
+  font-family: urbanist;
 }
 
 .testimonial-subtitle {
-  font-size: 15px;
+  font-size: 12px;
+  font-family: inter;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
@@ -3723,8 +3716,9 @@ button {
 }
 
 .quote-text {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 40px;
+  font-family: urbanist;
+  font-weight: 700;
   line-height: 1.35;
   margin: 0 0 32px 0;
   letter-spacing: -0.5px;
@@ -3789,25 +3783,15 @@ button {
   position: absolute;
   width: 450px;
   height: 450px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  
   border-radius: 50%;
-  bottom: -150px;
-  right: -50px;
+  bottom: -100px;
+  right: -30px;
   pointer-events: none;
   z-index: 1;
 }
 
-.bg-orbit-decoration::after {
-  content: '';
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #B9FF66;
-  border-radius: 50%;
-  top: 22%;
-  left: 14%;
-  box-shadow: 0 0 15px #B9FF66;
-}
+
 
 @keyframes entranceSlideRight {
   to {
